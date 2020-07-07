@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="B4g-gX-aJe">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Meal List View Controller-->
+        <scene sceneID="oPQ-pU-XD3">
+            <objects>
+                <viewController storyboardIdentifier="MealListView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="B4g-gX-aJe" customClass="MealListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mf0-sH-62b"/>
+                        <viewControllerLayoutGuide type="bottom" id="vau-ts-Dbj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SPG-9i-iGG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="btnTest" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cg7-7G-kx2">
+                                <rect key="frame" x="123" y="318.5" width="129" height="30"/>
+                                <state key="normal" title="Prueba de Servicio"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Cg7-7G-kx2" firstAttribute="centerY" secondItem="SPG-9i-iGG" secondAttribute="centerY" id="6gr-Mh-YQL"/>
+                            <constraint firstItem="Cg7-7G-kx2" firstAttribute="centerX" secondItem="SPG-9i-iGG" secondAttribute="centerX" id="PbV-0H-1NO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnService" destination="Cg7-7G-kx2" id="4Sh-5c-cQ4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Xg-AR-vfq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="26" y="32"/>
+        </scene>
+    </scenes>
+</document>

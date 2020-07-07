@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Api\" />
+    <Folder Include="MealList\" />
+    <Folder Include="MealList\DataManager\" />
+    <Folder Include="MealList\Interactor\" />
+    <Folder Include="MealList\Presenter\" />
+    <Folder Include="MealList\Contracts\" />
+    <Folder Include="Api\Models\" />
+    <Folder Include="Api\Models\Request\" />
+    <Folder Include="Api\Models\Response\" />
+    <Folder Include="Models\" />
+    <Folder Include="MealList\DataManager\Local\" />
+    <Folder Include="MealList\DataManager\Remote\" />
+    <Folder Include="Platform\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="refit" Version="5.1.67" />
+    <PackageReference Include="Autofac" Version="5.2.0" />
+  </ItemGroup>
+</Project>

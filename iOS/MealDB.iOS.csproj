@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{061BF8DA-6957-46C9-8BF9-E5CE6C8B22C9}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MealDB.iOS</RootNamespace>
+    <AssemblyName>MealDB.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>23292</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <MtouchSdkVersion>13.2</MtouchSdkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IOSDebuggerPort>57979</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARM64</MtouchArch>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>..\packages\System.Buffers.4.5.0\lib\netstandard2.0\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.7.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web">
+      <HintPath>..\packages\System.Text.Encodings.Web.4.7.0\lib\netstandard2.0\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.1.0\lib\netstandard2.0\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json">
+      <HintPath>..\packages\System.Text.Json.4.7.1\lib\netstandard2.0\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp">
+      <HintPath>..\packages\RestSharp.106.11.4\lib\netstandard2.0\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.5.2.0\lib\netstandard2.0\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Refit">
+      <HintPath>..\packages\Refit.5.1.67\lib\netstandard2.0\Refit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MealDB\MealDB.csproj">
+      <Project>{19B69758-7605-4D55-AF46-98466D007E9B}</Project>
+      <Name>MealDB</Name>
+      <ReferenceSourceTarget>ProjectReference</ReferenceSourceTarget>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Resources\Assets.xcassets\.DS_Store" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\88.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\1024.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\76.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\60.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\48.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\216.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\64.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\58.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\167.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\72.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\172.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\29.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\100.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\114.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\128.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\512.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\16.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\120.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\256.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\20.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\32.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\180.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\57.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\80.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\55.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\196.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\40.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\87.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\50.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\144.png" />
+    <ImageAsset Include="Resources\Assets.xcassets\AppIcon.appiconset\152.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Platform\" />
+    <Folder Include="MealList\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+    <InterfaceDefinition Include="Main.storyboard" />
+    <InterfaceDefinition Include="MealList\MealListStoryboard.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="ViewController.cs" />
+    <Compile Include="ViewController.designer.cs">
+      <DependentUpon>ViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealList\MealListRouter.cs" />
+    <Compile Include="MealList\MealListViewController.cs" />
+    <Compile Include="MealList\MealListViewController.designer.cs">
+      <DependentUpon>MealListViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MealList\MealListModule.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\.DS_Store" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\Refit.5.1.67\build\netstandard2.0\refit.targets" Condition="Exists('..\packages\Refit.5.1.67\build\netstandard2.0\refit.targets')" />
+</Project>
